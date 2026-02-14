@@ -1,35 +1,7 @@
 
-import type { Key, ReactElement, JSXElementConstructor, ReactNode, ReactPortal } from "react";
-import type { Activity } from "../types";
-import { Armchair, User, Bed, Footprints } from "lucide-react";
-import {ActivityType} from '../types';
+import type {ActivityType} from '../types';
 
-const activities: { name: Activity; icon: typeof Armchair; color: string; gradient: string }[] = [
-   {
-    name: 'sitting', 
-    icon: Armchair, 
-    color: 'bg-blue-500',
-    gradient: 'from-blue-400 to-blue-600'
-  },
-  { 
-    name: 'standing', 
-    icon: User, 
-    color: 'bg-green-500',
-    gradient: 'from-green-400 to-green-600'
-  },
-  { 
-    name: 'laying down', 
-    icon: Bed, 
-    color: 'bg-purple-500',
-    gradient: 'from-purple-400 to-purple-600'
-  },
-  { 
-    name: 'walking', 
-    icon: Footprints, 
-    color: 'bg-orange-500',
-    gradient: 'from-orange-400 to-orange-600'
-  },
-]
+
 
 function ActivityButton(props: ActivityType){
     const Icon = props.icon;
